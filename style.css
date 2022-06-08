@@ -43,10 +43,9 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     flex-direction: column;
     width: 414px;
-    height: 980px;
+    height: 1040px;
     background-color: #E5E5E5;  
-    padding-top: 100px;
-    z-index: 1;
+    padding-top: 100px;    
 }
 
 .menu h1 {
@@ -63,18 +62,20 @@ font-family: 'Roboto', sans-serif; */
 .menu-prato {
     display: flex;
     overflow: hidden;
+    overflow-x: scroll;
 }
 
 .menu-bebida {
     display: flex;
     overflow: hidden;
+    overflow-x: scroll;
 }
 
 .menu-sobremesa {
     display: flex;
     overflow: hidden;
+    overflow-x: scroll;
 }
-
 
 .prato {
     display: flex;
