@@ -1,30 +1,23 @@
-function escolhePrato (prato) {
-    const pratoClicado = document.querySelector(".selecionado");
-    if (pratoClicado !== null) {
-      pratoClicado.classList.remove("selecionado");
+function escolhePrato (elemento) {
+    const botaoClicado = document.querySelector(" .selecionado1");
+    if (botaoClicado !== null) {
+      botaoClicado.classList.remove('selecionado1');
     }
-    prato.classList.add("selecionado");
+    elemento.classList.add('selecionado1'); 
  }
 
- function escolheBebida(bebida) {
-  const bebidaClicado = document.querySelector(".selecionado");
-  if (bebidaClicado !== null) {
-    bebidaClicado.classList.remove("selecionado");
+function escolheBebida(elemento) {
+  const botaoClicado = document.querySelector(" .selecionado2" );
+  if (botaoClicado !== null) {
+    botaoClicado.classList.remove('selecionado2');
   }
-  bebida.classList.add("selecionado");
+  elemento.classList.add('selecionado2');
 }
 
-function escolheSobremesa(sobremesa) {
-  const sobremesaClicado = document.querySelector(".selecionado");
-  if (sobremesaClicado !== null) {
-    sobremesaClicado.classList.remove("selecionado");
+function escolheSobremesa(elemento) {
+  const botaoClicado = document.querySelector(" .selecionado3");
+  if (botaoClicado !== null) {
+    botaoClicado.classList.remove('selecionado3');
   }
-  sobremesa.classList.add("selecionado");
+  elemento.classList.add('selecionado3'); 
 }
-
-function confirmaPedido(confirma)  {
-  const confirma = document.querySelector(".selecionado2");
-  if (confirma !== null) {
-    confirma.classList.remove("selecionado2");
-  }
-  confirma.classList.add("selecionado2"); }

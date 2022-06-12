@@ -63,18 +63,21 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
+    position: relative;
 }
 
 .menu-bebida {
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
+    position: relative;
 }
 
 .menu-sobremesa {
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
+    position: relative;
 }
 
 .prato {
@@ -84,10 +87,11 @@ font-family: 'Roboto', sans-serif; */
     width: 172px;    
     top: 165px;
     border-radius: 9px;
-    background-color: #FFFFFF;   
+    background-color: #FFFFFF;
+    color: #FFFFFF;  
     margin-left: 15px;
     text-align: left;
-    align-items: center;        
+    align-items: center;     
 }
 
 .bebida {
@@ -97,7 +101,8 @@ font-family: 'Roboto', sans-serif; */
     width: 172px;    
     top: 165px;
     border-radius: 9px;
-    background-color: #FFFFFF;   
+    background-color: #FFFFFF;
+    color: #FFFFFF;     
     margin-left: 15px;
     text-align: left;
     align-items: center;        
@@ -110,7 +115,8 @@ font-family: 'Roboto', sans-serif; */
     width: 172px;    
     top: 165px;
     border-radius: 9px;
-    background-color: #FFFFFF;   
+    background-color: #FFFFFF;
+    color: #FFFFFF;     
     margin-left: 15px;
     text-align: left;
     align-items: center;        
@@ -123,7 +129,7 @@ font-family: 'Roboto', sans-serif; */
     padding-top: 14px;    
 }
 
-.descricao {
+.descricao {    
     padding-left: 14px;
     padding-top: 7px;    
 }
@@ -194,10 +200,29 @@ font-family: 'Roboto', sans-serif; */
 
 /* parte interativa com JS */
 
-.selecionado {
+.selecionado1 {
+    display: flex;
     border: 5px solid #32b72f;
+    box-sizing: border-box;
+    color: #32b72f;
 }
 
 .selecionado2 {
-    background-color: #32b72f;
+    display: flex;
+    border: 5px solid #32b72f;
+    box-sizing: border-box;
+    color: #32b72f;
+}
+.selecionado3 {
+    display: flex;
+    border: 5px solid #32b72f;
+    box-sizing: border-box;
+    color: #32b72f;
+}
+
+.check ion-icon {
+    margin-left: 55px;      
+    bottom: 22px;
+    position: absolute;
+    
 }
