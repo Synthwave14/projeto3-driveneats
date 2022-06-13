@@ -44,14 +44,14 @@ function confirmaPedido(){
 function enviarPedido(){
   if (selecionados === 3){
     let nome = prompt("Informe o seu nome:");
-    let endereco = prompt("Informe o seu endereço:")
-    let nomePrato = document.querySelector(".prato .selecionado1 .h3")
-    let precoPrato = document.querySelector(".prato .selecionado1 .h5")
-    let nomeBebida = document.querySelector(".bebida .selecionado2 .h3")
-    let precoBebida = document.querySelector(".bebida .selecionado2 .h5")
-    let nomeSobremesa = document.querySelector(".sobremesa .selecionado3 .h3")
-    let precoSobremesa = document.querySelector(".sobremesa .selecionado3 .h5")
-
+    let endereco = prompt("Informe o seu endereço:");
+    let nomePrato = document.querySelector(".selecionado1 .descricao h3").innerHTML;
+    let precoPrato = document.querySelector(".selecionado1 .descricao h5").innerHTML;
+    let nomeBebida = document.querySelector(".selecionado2 .descricao h3").innerHTML;
+    let precoBebida = document.querySelector(".selecionado2 .descricao h5").innerHTML;
+    let nomeSobremesa = document.querySelector(".selecionado3 .descricao h3").innerHTML;
+    let precoSobremesa = document.querySelector(".selecionado3 .descricao h5").innerHTML;
+    
     precoPrato = precoPrato.replace("R$ ", "");
     precoBebida = precoBebida.replace("R$ ", "");
     precoSobremesa = precoSobremesa.replace("R$ ", "");
@@ -61,7 +61,10 @@ function enviarPedido(){
 
     let precoTotal = parseFloat(precoPrato) + parseFloat(precoBebida) + parseFloat(precoSobremesa);
     precoTotal = precoTotal.toFixed(2);
-    let textoWhatsapp = "Olá, gostaria de fazer o pedido: \n - Prato: " + nomePrato + "\n - Bebida: " + nomeBebida + "\n - Sobremesa: " + nomeSobremesa + "\n Total: R$ " + precoTotal + "\n \n Nome: " + nome + "\n Endereço: " + endereco;
-    console.log (textoWhatsapp);
+    let Zapzap = "Olá, gostaria de fazer o pedido: \n - Prato: " + nomePrato + "\n - Bebida: " + nomeBebida + "\n - Sobremesa: " + nomeSobremesa + "\n Total: R$ " + precoTotal + "\n \n Nome: " + nome + "\n Endereço: " + endereco;
+    console.log (Zapzap);
+
+    const url = "https://wa.me/5521988088886?text=" + encodeURIComponent(Zapzap);     
+    window.open(url, "_blank");
   }
 }
